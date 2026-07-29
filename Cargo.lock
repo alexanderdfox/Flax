@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "static-html-server"
+name = "Flax"
 version = "1.0.0"
