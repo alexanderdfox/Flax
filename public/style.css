@@ -1,0 +1,20 @@
+/* Demonstrates CSS serving */
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+h1 {
+  color: #0b5fff;
+}
+
+code {
+  background: #e8e8e8;
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+}
