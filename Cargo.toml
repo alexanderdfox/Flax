@@ -1,5 +1,5 @@
 [package]
-name = "static-html-server"
+name = "Flax"
 version = "1.0.0"
 edition = "2021"
 rust-version = "1.70"
@@ -9,7 +9,7 @@ description = "A secure, minimal, pure-std static file server for HTML and CSS o
 readme = "README.md"
 keywords = ["http", "static", "server", "security"]
 categories = ["web-programming::http-server"]
-repository = "https://github.com/example/static-html-server"
+repository = "https://github.com/alexanderdfox/Flax"
 
 [features]
 default = []
