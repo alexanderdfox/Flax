@@ -1,4 +1,4 @@
-# static-html-server
+# Flax
 
 A **secure, minimal, production-oriented** static file server written in pure Rust (`std` only).  
 It does one thing: serve `.html` and `.css` files safely.
