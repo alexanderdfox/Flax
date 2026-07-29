@@ -685,8 +685,8 @@ fn install_signal_handlers() {
     // SIGINT = 2, SIGTERM = 15 on virtually all Unix.
     // SAFETY: the handler is async-signal-safe (only an atomic store).
     unsafe {
-        signal(2, handle_signal as usize);
-        signal(15, handle_signal as usize);
+        signal(2, handle_signal as *const () as usize);
+        signal(15, handle_signal as *const () as usize);
     }
 }
 
