@@ -36,7 +36,7 @@ It does one thing: serve `.html` and `.css` files safely.
 cargo build --release
 
 # Run with defaults (serves ./public on 127.0.0.1:8080)
-./target/release/static-html-server
+./target/release/Flax
 
 # Or during development
 cargo run
@@ -45,7 +45,7 @@ cargo run
 cargo run -- --root /var/www/static --bind 0.0.0.0:8080
 
 # Drop privileges (must start as root)
-sudo ./target/release/static-html-server --bind 0.0.0.0:80 --drop-user www-data
+sudo ./target/release/Flax --bind 0.0.0.0:80 --drop-user www-data
 ```
 
 Environment variables:
