@@ -1,0 +1,30 @@
+[package]
+name = "static-html-server"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.70"
+authors = ["Static HTML Server Contributors"]
+license = "MIT"
+description = "A secure, minimal, pure-std static file server for HTML and CSS only"
+readme = "README.md"
+keywords = ["http", "static", "server", "security"]
+categories = ["web-programming::http-server"]
+repository = "https://github.com/example/static-html-server"
+
+[features]
+default = []
+# Optional TLS would require a pure-MIT TLS crate. None currently satisfy
+# the strict "no dual-licensed" rule without pulling non-MIT transitive deps,
+# so TLS is intentionally omitted. Enable behind a future pure-MIT crate.
+
+[dependencies]
+# Zero external crates. Everything is pure std + hand-written HTTP/1.1.
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+panic = "abort"
